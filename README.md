@@ -1,6 +1,6 @@
 # expQ
 Product of non-negative vector and exponential of a rate matrix.
-RCppArmadillo package to evaluate nu^T exp(Q) for a non-negative vector nu and a sparse or dense matrix Q.
+RCppArmadillo package to evaluate nu^T exp(Q) for a non-negative vector nu and a sparse or dense rate matrix Q.
 Two method choices: scaling and squaring or uniformisation.
 Also includes code to evaluate exp(Q) using scaling and squaring.
 ## Accompanying paper
