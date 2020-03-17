@@ -12,3 +12,5 @@ Eyam.r - performs the benchmarking reported in the accompanying paper, demonstra
 genericQ.r - ancillary file that sets up the Q matrices for a few different models and, in particular, the SIR model  
 
 Further, very simple demonstration calls to the functions appear in the help files for the individual functions. If you are unable to load the package then search for the @examples in expQ.cpp
+
+You will need to install the C++ library Boost before using the expQ package.
