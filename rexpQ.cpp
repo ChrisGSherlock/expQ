@@ -171,16 +171,16 @@ static arma::mat drivel(void ) {
 //////////////////////////////
 /*** Scaling and squaring ***/
 //////////////////////////////
-// Choose number of squares, s according to
+// Choose number of squares, s according to rho and eps
 // Old code that was used in MESA
 //inline int get_s_from_rho(double rho) {
 //  return (rho>1) ? (int) (log(rho)/log(2)): 0;
 //}
 // Better algorithm
 int get_s_from_rho_prec(double rho, double eps) {
-  const double log2=log(2), logrho=log(rho);
-  int smax=logrho/log2<-7?0:(int)(log(rho)/log2) +7;
-  int smin=smax<7?0:smax-7, s=smin;
+  const double log2=log(2);
+  int shat=(log(rho)+log(log2))/log2;
+  int smin=shat<0?0:shat, s=smin, smax=smin+6;
   double rhosmall=rho/exp((double)s*log2);
   int nops=get_m(rhosmall,eps)+s, bestnops=nops, bests=s;
   for (s=smin+1;s<=smax;s++) {
