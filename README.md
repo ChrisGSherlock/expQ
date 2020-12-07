@@ -13,7 +13,7 @@ Sherlock (2020) Direct statistical inference for finite Markov jump processes vi
 `Eyam.r` - performs the benchmarking reported in the accompanying paper, demonstrating use of the functions in earnest   
 `genericQ.r` - ancillary file that sets up the Q matrices for a few different models and, in particular, the SIR model  
 
-Further, very simple demonstration calls to the functions appear in the help files for the individual functions. If you are unable to load the package then search for the @examples in expQ.cpp
+Further, very simple demonstration calls to the functions appear in the help files for the individual functions. If you are unable to load the package then search for the @examples in `rexpQ.cpp`
 
 Before installing the preferred version, `expQ`, you will need to install the C++ library `Boost`.
 Alternatively, `expQnoBoost` is available, which uses the `R` function `qpois()`. It cannot handle precisions below 4e-16, whereas `expQ` can handle down to 1e-16. It is also slightly less accurate when rho is large (see accompanying paper).
