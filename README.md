@@ -4,7 +4,7 @@ RCppArmadillo package to evaluate nu^T exp(Q) for a non-negative vector nu and a
 Two method choices: scaling and squaring or uniformisation.
 Also includes code to evaluate exp(Q) using scaling and squaring.
 ## Accompanying paper
-Sherlock (2020) Direct statistical inference for finite Markov jump processes via the matrix exponential. Submitted.
+Sherlock (2021) *Direct statistical inference for finite Markov jump processes via the matrix exponential*. Computational Statistics. [https://doi.org/10.1007/s00180-021-01102-6](https://doi.org/10.1007/s00180-021-01102-6)
 ## Files
 `expQ_1.1.tar.gz` - library. From the terminal use: R CMD INSTALL expQ_1.1.tar.gz   
 `rexpQ.cpp` - if R version is too early for the library then within your R file use: sourceCpp("rexpQ.cpp")   
